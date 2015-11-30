@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var monsterImg: UIImageView!
+    @IBOutlet weak var foodImg: UIImageView!
+    @IBOutlet weak var heartImg: UIImageView!
     
     
     override func viewDidLoad() {
@@ -26,8 +28,14 @@ class ViewController: UIViewController {
         monsterImg.animationDuration = 0.8
         monsterImg.animationRepeatCount = 0
         monsterImg.startAnimating()
+        
     }
-
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        print("I just touched the screen")
+    }
+    
+    
 
 }
 
